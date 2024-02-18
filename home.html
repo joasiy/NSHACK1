@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TheBlackPrint</title>
+  <style>
+    body {
+      font-family: "Anton", sans-serif;
+      background-color: #1e1e1e;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      transition: transform 1s ease-in-out; 
+    }
+     
+    .typed-text {
+      font-size: 108px;
+      font-weight: normal;
+      color: #ffffff;
+      overflow: hidden; 
+      white-space: nowrap;
+      border-right: .15em solid #d4af37; 
+      animation: typing 3s steps(20, end), blink-caret .75s step-end infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 35% }
+    }
+
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: #d4af37; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" style="display: none;">
+    <a class="navbar-brand" href="#">TheBlackPrint</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Finance</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Careers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Black Business</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Our Story</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="typed-text">TheBlackPrint</div>
+
+  <script>
+    document.querySelector('.typed-text').addEventListener('animationend', () => {
+      document.body.style.transform = 'translateY(-100vh)';
+      setTimeout(() => {
+        window.location.href = 'home2.html';
+      }, 1000); 
+    });
+  </script>
+</body>
+</html>

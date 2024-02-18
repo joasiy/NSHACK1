@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        /* Container for the map and local businesses */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+            /* Added margin to the top */
+        }
+
+
+        /* Style for the map container */
+        .map-container {
+            width: 200px;
+            height: 200px;
+            margin-bottom: 20px;
+            /* Added margin to the bottom */
+        }
+
+        /* Style for the map iframe */
+        .map-container iframe {
+            width: 100%;
+            /* Make the iframe inside the map container fill the container */
+            height: 100%;
+            /* Make the iframe inside the map container fill the container */
+            border: 0;
+            /* Remove border */
+        }
+
+        /* Style for the local businesses */
+        .business {
+            flex: 1;
+            width: 100%;
+            max-width: 800px;
+            /* Limited maximum width */
+            padding: 20px;
+            /* Added padding to the sides */
+        }
+
+        .navbar {
+            margin-bottom: 20px;
+            /* Added margin to the bottom of the navbar */
+        }
+
+        /* Style for business details */
+        .business-details {
+            margin-bottom: 20px;
+            /* Add space between each business */
+            display: flex;
+            /* Make the business details display flex */
+        }
+
+        /* Style for business info */
+        .business-info {
+            flex: 1;
+            /* Occupy remaining space */
+            padding-left: 10px;
+            /* Add padding to separate business info from the map */
+        }
+
+        .business-details a {
+            color: #6cd4ff;
+            /* Default link color */
+            text-decoration: none;
+            /* Remove underline */
+            transition: color 0.3s ease;
+            /* Smooth transition for color change */
+        }
+
+        /* Change link color on hover */
+        .business-details a:hover {
+            color: #4ca3dd;
+            /* New color on hover */
+        }
+
+        .business-heading {
+            text-align: center;
+            /* Center-align the text */
+            margin-top: 100px;
+            /* Add some margin to the top */
+            margin-bottom: 20px;
+            /* Add some margin to the bottom */
+            color: white;
+            font-family: Anton, sans-serif;
+            font-weight: bold;
+            font-size: 48px;
+        }
+
+        body {
+            background-color: #1e1e1e;
+            /* Background color */
+            color: #BF9B30;
+            /* Text color */
+            font-family: Anton, sans-serif;
+            /* Font family */
+        }
+    </style>
+</head>
+
+<body>
+
+    <body class="loading">
+        <header>
+            <div class="inner">
+                <div class="logo">
+                    <img src="img/somee.png" alt="Logo">
+                    <span class="site-name">TheBlackPrint</span>
+                </div>
+                <nav>
+                    <a class="active" href="home2.html">Home</a>
+                    <a href="ourstory.html">Contact Us</a>
+                    <a href="finance.html">Finance</a>
+                    <a href="careers.html">Career</a>
+                    <a href="business.html">Black Business</a>
+                </nav>
+                <div class="search-button">
+                    <input type="text" placeholder="Search...">
+                    <button>Search</button>
+                </div>
+            </div>
+        </header>
+
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        </nav>
+        <h1 class="business-heading">Local Businesses In Troy Area</h1>
+        <div class="business">
+            <div class="business-details">
+                <div class="map-container">
+                    <iframe frameborder="0"
+                        src="https://www.google.com/maps/embed/v1/place?q=Holmes+Beauty+Supply+Store,+120+Hoosick+St,+Troy,+NY+12180&key=AIzaSyCGQKU-IDi1hZ7UHdhfGHgYVsuv8vT0cF4"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="business-info">
+                    <a onclick="location.href='https://www.holmesbeautysupplystore.com/'" rel="nofollow noreferrer">
+                        Holmes Beauty Supply Store
+                    </a>
+                    <p>Address: 120 Hoosick St, Troy, NY 12180</p>
+                    <p>Phone: (518) 918-5040</p>
+                    <p>Holmes Beauty Supply Store is a brand new professional beauty supply store located in Troy, NY.
+                        We
+                        are a specialty retailer who sells affordable high-quality cosmetics, wigs, hair weave, hair
+                        extensions, barber supplies, accessories, and a variety of quality hair-care products.</p>
+                    <p>We offer exceptional customer service and strive to make your shopping experience both
+                        pleasurable
+                        and unforgettable.</p>
+                </div>
+            </div>
+
+            <div class="business-details">
+                <div class="map-container">
+                    <iframe frameborder="0"
+                        src="https://www.google.com/maps/embed/v1/place?q=Collective+Effort,+15+2nd+St,+1st+floor+Troy,+NY+12180&key=AIzaSyCGQKU-IDi1hZ7UHdhfGHgYVsuv8vT0cF4"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="business-info">
+                    <a onclick="location.href='https://www.collectiveeffort.co/'" rel="nofollow noreferrer">
+                        Collective Effort
+                    </a>
+                    <p>Address: 15 2nd St, 1st floor Troy, NY 12180</p>
+                    <p>Phone: (518) 752-3007</p>
+                    <p>Collectiveffort is where “cool” is created. We are a Creative Agency on a mission to build
+                        sustainable creative communities. We do this by telling great stories & building spaces that
+                        develop
+                        the creative culture in emerging communities.</p>
+                </div>
+            </div>
+
+            <div class="business-details">
+                <div class="map-container">
+                    <iframe frameborder="0"
+                        src="https://www.google.com/maps/embed/v1/place?q=First+Choice+Caribbean,+451+Fulton+St,+Troy,+NY+12180&key=AIzaSyCGQKU-IDi1hZ7UHdhfGHgYVsuv8vT0cF4"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="business-info">
+                    <a onclick="location.href='https://www.facebook.com/p/First-Choice-Caribbean-100064073173394/'"
+                        rel="nofollow noreferrer">
+                        First Choice Caribbean
+                    </a>
+                    <p>Address: 451 Fulton St, Troy, NY 12180</p>
+                    <p>Phone: (518) 272-4544</p>
+                    <p> First Choice Caribbean is a restaurant located at 451 Fulton St, Troy, NY 12180. It serves
+                        authentic
+                        Jamaican food, including comfort food, small plates, and vegetarian options. Some say the food
+                        is
+                        great, the service is fast, and the atmosphere is awesome. Others say the beef patties and fish
+                        fry
+                        are excellent. </p>
+                </div>
+
+                
